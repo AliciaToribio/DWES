@@ -1,0 +1,2 @@
+Nombre: James Cosling, Dni: 32000032G, Sexo: M, Categoria: 3, Años: 7, Sueldo: 125000.0
+Nombre: Ada LoveLace, Dni: 32000031R, Sexo: F, Categoria: 1, Años: 0, Sueldo: 50000.0
