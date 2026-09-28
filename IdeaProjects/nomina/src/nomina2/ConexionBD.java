@@ -1,4 +1,4 @@
-package prueba2;
+package nomina2;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

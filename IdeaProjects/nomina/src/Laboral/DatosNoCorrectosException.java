@@ -1,4 +1,4 @@
-package Otros;
+package Laboral;
 
 /**
  * Excepción que se lanza cuando se intentan asignar datos no válidos a un empleado

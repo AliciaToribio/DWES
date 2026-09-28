@@ -1,15 +1,12 @@
-package prueba2;
+package nomina2;
 
-import Otros.DatosNoCorrectosException;
-import Otros.Empleado;
-import Otros.Nomina;
+import Laboral.Empleado;
+import Laboral.Nomina;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 public class MetodosAltaEmpleado {
     public void altaEmpleado(Empleado e) {

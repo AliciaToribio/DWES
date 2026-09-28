@@ -1,4 +1,4 @@
-package Otros;
+package Laboral;
 
 /**
  * Clase para calcular la nómina de los empleados

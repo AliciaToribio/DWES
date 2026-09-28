@@ -1,12 +1,8 @@
-package Otros;
+package Laboral;
 
-import prueba2.MetodosAltaEmpleado;
-import prueba2.ConexionBD;
-import prueba2.FicheroEmpleado;
-import prueba2.MetodosBD;
+import nomina2.FicheroEmpleado;
+import nomina2.MetodosBD;
 
-import java.sql.Connection;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -33,11 +29,11 @@ public class CalculaNominas {
 //        }
 
         MetodosBD mbd = new MetodosBD();
-        ArrayList<Empleado> listaEmpleado = FicheroEmpleado.leerEmpleados("IdeaProjects/prueba1/Recursos/empleados.txt");
+        ArrayList<Empleado> listaEmpleado = FicheroEmpleado.leerEmpleados("IdeaProjects/nomina/Recursos/empleados.txt");
         Empleado james = listaEmpleado.get(0);
         Empleado ada = listaEmpleado.get(1);
         escribe(james, ada);
-        FicheroEmpleado.escribirSueldo("IdeaProjects/prueba1/Recursos/salario.txt",listaEmpleado);
+        FicheroEmpleado.escribirSueldo("IdeaProjects/nomina/Recursos/salario.txt",listaEmpleado);
         Scanner sc = new Scanner(System.in);
 
         int opcion;
@@ -84,7 +80,7 @@ public class CalculaNominas {
                     mbd.actualizarSueldoEmpleados();
                     break;
                 case 6:
-                    mbd.backup("IdeaProjects/prueba1/Recursos/backup.txt");
+                    mbd.backup("IdeaProjects/nomina/Recursos/backup.txt");
                     break  ;
                 default:
                     System.out.println("La opcion debe ser entre 0 y 6");

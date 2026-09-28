@@ -1,8 +1,8 @@
-package prueba2;
+package nomina2;
 
-import Otros.DatosNoCorrectosException;
-import Otros.Empleado;
-import Otros.Nomina;
+import Laboral.DatosNoCorrectosException;
+import Laboral.Empleado;
+import Laboral.Nomina;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -159,6 +159,7 @@ public class MetodosBD {
 
                 ps.executeUpdate();
                 actualizarSueldoEmpleado(dni);
+                System.out.println("Categoria actualizada con exito");
             } catch (Exception e) {
                 System.out.println("Error al actualizar la categoria del empleado" + e.getMessage());
             }
@@ -179,6 +180,8 @@ public class MetodosBD {
 
                 ps.executeUpdate();
                 actualizarSueldoEmpleado(dni);
+                System.out.println("Anyos actualizados con exito");
+
             } catch (Exception e) {
                 System.out.println("Error al actualizar los anios del empleado" + e.getMessage());
             }
@@ -208,11 +211,10 @@ public class MetodosBD {
                     psUpdate.setString(2, dni);
                     psUpdate.executeUpdate();
                 }
-
+                System.out.println("Sueldo actualizado con exito");
             } else {
                 System.out.println("No existe ningún empleado con dni " + dni);
             }
-
         } catch (Exception e) {
             System.out.println("Error al actualizar sueldos: " + e.getMessage());
         }
@@ -238,7 +240,7 @@ public class MetodosBD {
                 ps.setString(2, dni);
                 ps.executeUpdate();
             }
-
+            System.out.println("Sueldos actualizados con exito");
         } catch (Exception e) {
             System.out.println("Error al actualizar sueldos: " + e.getMessage());
         }
@@ -261,7 +263,7 @@ public class MetodosBD {
                         + ", Categoria: " + categoria + ", Años: " + anyos + ", Sueldo: " + sueldo);
                 bw.newLine();
             }
-
+            System.out.println("Backup realizado con exito");
         } catch (Exception e) {
             System.out.println("Error al hacer copia de seguridad: " + e.getMessage());
         }
