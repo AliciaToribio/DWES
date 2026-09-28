@@ -17,7 +17,6 @@ public class CalculaNominas {
      * @param args argumentos de línea de comandos (no se utilizan)
      */
     public static void main(String[] args) {
-        
 //        try {
 //            Empleado james = new Empleado("James Cosling", "32000032G", 'M', 4, 7);
 //            Empleado ada = new Empleado("Ada Lovelace", "32000031R", 'F');
